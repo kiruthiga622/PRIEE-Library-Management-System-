@@ -1,0 +1,7 @@
+Array
+(
+    [username] => kalai
+    [password] => kalaiselvi
+)
+DB Password: $2y$10$6izwjrkXTBkwonQcAk2n5uIqBRG5eWqLA7KyFshQfvJi0Rh0G2twi
+Entered Password: kalaiselvi

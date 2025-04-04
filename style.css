@@ -1,0 +1,115 @@
+.wrapper{
+    height:660px;
+    width: 1350px; ;
+}
+header{
+    height: 130px;
+    width:1600px ;
+    background-color: black;	
+}
+section{
+    height: 550px;
+    width:1364px ;
+    background-color: grey;
+
+}
+footer{
+    height:82px;
+    width:1361px ;
+    background-color: black;padding-top:0px;
+}
+.logo
+{
+	float :left;
+	padding-left: 20px;
+
+}
+.logo img 
+{
+	padding-left: 100px;
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+li a
+{
+	color: white;
+	text-decoration: none;
+	padding-right: 150px;
+}
+on .sec_img
+{
+	height: 560px;
+	margin-top: 0px;
+	background-image: url("images/banner-1.jpg");
+	height: 100vh; 
+		width: 100vw; 
+		margin: 0; 
+		background-size: cover; 
+		background-position: center;
+		background-repeat: no-repeat;
+}
+.box
+{
+	height: 450px;
+	width: 450px;
+	background-color: #030002;
+	margin: 50px auto;
+	padding: top 100px;
+	opacity: .6;
+	color: white;
+}
+.log_img{
+	height: 650px;
+	margin-top: 0px;
+	background-image: url("images/3.jpg");
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+		background-size: cover;
+		background-position: center; 
+		background-repeat: no-repeat; 
+	
+	
+	}
+.box1{
+	height: 450px;
+	width: 450px;
+	background-color: #030002;
+	margin: 70px auto;
+	opacity: .7;
+	color: white;
+	padding:20px;
+}
+form .login
+{
+	margin: auto 50px;
+}
+input{
+	height: 25px;
+	width: 300px;
+}	
+.reg_img
+{
+	height: 630px;
+	margin-top: 0px;
+	background-image: url("images/4.png");
+	height: 100vh; 
+		width: 100vw; 
+		margin: 0; 
+		background-size: cover;
+		background-position: center; 
+		background-repeat: no-repeat; 
+}
+.box2
+{
+	height: 620px;
+	width: 400px;
+	background-color: black;
+	margin: 0px auto;
+	opacity: .7;
+	color: white;
+	padding: 20px;
+}

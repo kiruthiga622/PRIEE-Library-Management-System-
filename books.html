@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <title>Library - Select Books</title>
+ 
+    <style>
+ 
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c50, #4fa3c9);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.filter-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-section button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.filter-section button:hover {
+    background: #218838;
+}
+
+.available {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 30px;
+    /* background-color: white;
+    border-radius: 10px;
+    width: 80%; */
+}
+
+.available h2 {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding-right: 15px;
+}
+
+
+.book {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.borrow-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.borrow-btn {
+    background: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.borrow-btn:hover {
+    background: #c82333;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand active">ONLINE LIBRARY MANAGEMENT SYSTEM</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">BOOKS</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+         
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <header>
+        📖 Welcome to REC LIBRARY MANAGEMENT SYSTEM
+        <p>Browse & borrow books for 2 weeks. Late fees apply if overdue.</p>
+    </header>
+    <div style="background-image: url('images/LIB.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;">
+    <div class="bg">
+       
+        <section class="filter-section">
+            <h2>📚 Filter Books</h2>
+            <input type="text" id="genreFilter" placeholder="Genre">
+            <input type="text" id="authorFilter" placeholder="Author">
+            <input type="text" id="nameFilter" placeholder="Book Name">
+            <button onclick="applyFilters()" id="applyFilters">Apply Filters</button>
+        </section>
+
+   
+        <section class="available">
+            <h2>📘 Available Books</h2>
+            <div id="booksList" class="book-container">
+                <!-- <div class="book">
+                    <strong>Book Title 1</strong>
+                    <span>Author: John Doe</span>
+                    <span>Genre: Fiction</span>
+                    <span>Published: 2022</span>
+                </div>
+
+                <div class="book">
+                    <strong>Book Title 2</strong>
+                    <span>Author: Jane Smith</span>
+                    <span>Genre: Science</span>
+                    <span>Published: 2020</span>
+                </div> -->
+            </div>
+        </section>
+    </div>
+
+   
+    <div class="borrow-section">
+        <button class="borrow-btn" onclick="borrowBooks()" id="borrowBtn">Borrow and Return Books</button>
+    </div></div>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
+

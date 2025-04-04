@@ -1,0 +1,178 @@
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: {"user_id":"22","books":["1","2","3"]}
+User ID: 22
+Books: ["1","2","3"]
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: {"user_id":"22","books":["1"]}
+User ID: 22
+Books: ["1"]
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Raw Input: 
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: {"user_id":"22","books":["1","4"]}
+User ID: 22
+Books: ["1","4"]
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: {"user_id":"22","books":["1","4"]}
+User ID: 22
+Books: ["1","4"]
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Session Data: {"user_id":20,"username":"jayanee"}
+Raw Input: {"user_id":"20","books":["3"]}
+User ID: 20
+Books: ["3"]
+Session Data: {"user_id":20,"username":"jayanee"}
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: {"user_id":"22","books":["1"]}
+User ID: 22
+Books: ["1"]
+Session Data: {"user_id":22,"username":"kiruthiga"}
+Raw Input: {"user_id":"20","books":["2"]}
+User ID: 20
+Books: ["2"]
+Raw Input: {"user_id":"20","books":["2"]}
+User ID: 20
+Books: ["2"]
+Raw Input: {"user_id":"20","books":["2"]}
+User ID: 20
+Books: ["2"]
+Raw Input: 
+Raw Input: {"user_id":"20","books":["2"]}
+User ID: 20
+Books: ["2"]
+Raw Input: {"user_id":"23","books":["4"]}
+User ID: 23
+Books: ["4"]
+Raw Input: {"user_id":"23","books":["3"]}
+User ID: 23
+Books: ["3"]
+Raw Input: {"user_id":"23","books":["3"]}
+User ID: 23
+Books: ["3"]
+Raw Input: {"user_id":"23","books":["3"]}
+User ID: 23
+Books: ["3"]
+Raw Input: {"user_id":"23","books":["2"]}
+User ID: 23
+Books: ["2"]
+Raw Input: {"user_id":"23","books":["4"]}
+User ID: 23
+Books: ["4"]
+Raw Input: {"user_id":"24","books":["3","5"]}
+User ID: 24
+Books: ["3","5"]
+Raw Input: {"user_id":"24","books":["2"]}
+User ID: 24
+Books: ["2"]
+Raw Input: {"user_id":"20","books":["1"]}
+User ID: 20
+Books: ["1"]
+Raw Input: {"user_id":"20","books":["2"]}
+User ID: 20
+Books: ["2"]
+Raw Input: {"user_id":"20","books":["1","2"]}
+User ID: 20
+Books: ["1","2"]
+Raw Input: 
+Raw Input: {"user_id":"25","books":["1","4"]}
+User ID: 25
+Books: ["1","4"]
+Raw Input: {"user_id":"25","books":["1","4","7"]}
+User ID: 25
+Books: ["1","4","7"]
+Raw Input: {"user_id":"20","books":["2","5"]}
+User ID: 20
+Books: ["2","5"]
+Raw Input: {"user_id":"25","books":["2"]}
+User ID: 25
+Books: ["2"]
+Raw Input: {"user_id":"26","books":["7"]}
+User ID: 26
+Books: ["7"]
+Raw Input: {"user_id":"26","books":["2"]}
+User ID: 26
+Books: ["2"]
+Raw Input: {"user_id":"26","books":["2"]}
+User ID: 26
+Books: ["2"]
+Raw Input: {"user_id":"26","books":["2","4","7"]}
+User ID: 26
+Books: ["2","4","7"]
+Raw Input: {"user_id":"26","books":["2","4","7"]}
+User ID: 26
+Books: ["2","4","7"]
+Raw Input: {"user_id":"26","books":["3"]}
+User ID: 26
+Books: ["3"]
+Raw Input: {"user_id":"26","books":["4"]}
+User ID: 26
+Books: ["4"]
+Raw Input: {"user_id":"27","books":["4"]}
+User ID: 27
+Books: ["4"]
+Raw Input: {"user_id":"27","books":["2","3","4","7"]}
+User ID: 27
+Books: ["2","3","4","7"]
+Raw Input: {"user_id":"26","books":["3","7"]}
+User ID: 26
+Books: ["3","7"]

@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Login</title>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      
+       <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c50, #4fa3c9);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 20px;
+}
+
+.navbar-nav li a {
+    color: white !important;
+    font-size: 16px;
+}
+
+.navbar-nav li a:hover {
+    background: #007bff;
+}
+
+.log_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box1 {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-default {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-default:hover {
+    background: #218838;
+}
+
+#loginMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>   
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand active">ONLINE LIBRARY MANAGEMENT SYSTEM</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">BOOKS</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="student_login.html"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
+                <li><a href="registration.html"><span class="glyphicon glyphicon-user"> SIGN UP</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="background-image: url('images/LIB.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;">
+    <section>
+        <div class="log_img">
+            <br>
+            <div class="box1">
+                <h1 style="text-align: center; font-size: 35px;">Library Management System</h1>
+                <h1 style="text-align: center; font-size: 25px;">User Login Form</h1><br>
+
+                <form id="loginForm"> 
+                    <div class="login">
+                        <input class="form-control" type="text" name="username" placeholder="Username" required=""> <br>
+                        <input class="form-control" type="password" name="password" placeholder="Password" required=""> <br>
+                        <input class="btn btn-default" type="submit" value="Login" style="color: black; width: 70px; height: 30px"> 
+                    </div>
+                </form>
+
+                <p style="color: green; padding-left: 15px;">
+                    <br><br>
+                    <!-- <a style="color:green;" href="">Forgot password?</a>  -->
+                    New to this website? <a style="color: black;" href="registration.html">Sign Up</a>
+                </p>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#loginForm").submit(function(event) {
+                event.preventDefault();
+    
+                $.ajax({
+                    url: "student_login.php",
+                    type: "POST",
+                    contentType: "application/x-www-form-urlencoded",
+                    data: $(this).serialize(),
+                    dataType: "json",
+                    success: function(response) {
+                        console.log("✅ AJAX Response:", response);
+    
+                        if (response.success) {
+                            localStorage.setItem("user_id", response.user_id);
+                            window.location.href = "books.html";  
+                        } else {
+                            $("#loginMessage").html("<span style='color: red;'>" + response.message + "</span>");
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("❌ AJAX Error:", xhr.status, xhr.statusText);
+                        console.log("Response:", xhr.responseText);
+                        $("#loginMessage").html(`
+                            <span style='color: red;'>
+                                AJAX Error: ${xhr.status} ${xhr.statusText}<br>
+                                Response: ${xhr.responseText}
+                            </span>
+                        `);
+                    }
+                });  
+    
+            }); 
+        });
+    </script>
+    
+    
+    
+    
+
+
+</body>
+</html>
